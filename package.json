@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio site by Vincent Rellum",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinceRell/portfolio.git"
+  },
+  "author": "Vincent Rellum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinceRell/portfolio/issues"
+  },
+  "homepage": "https://github.com/VinceRell/portfolio#readme",
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
