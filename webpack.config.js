@@ -6,47 +6,37 @@ module.exports = {
     entry: './app/assets/scripts/main.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        name: main.js
+        filename: "main.js"
     },
     module: {
         rules: [
-            {
-                test: /\.(html)$/,
-                loader: 'html-srcsets-loader',
-                options: {
-                    attrs: ['img:src', ':srcset'],
-                    minimize: false,
-                    caseSensitive: true,
-                    removeAttributeQuotes: false
+          {
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+          },
+          {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+                {
+                    loader: 'url-loader',
+                    options: {
+                    limit: 5000
+                    }
                 }
-            },
-            {
-                test: /\.(gif|png|jpe?g|svg)/i,
-                loader: "file-loader",
-                options: {
-                    publicPath: "./images",
-                    outputPath: "./images"
-                }
-            },
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    "postcss-loader",
-                    "sass-loader"
-                ]
+            ]
+          },
+          {
+            test: /\.js$/,
+            exclude: /(node_modules)/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env']
+              }
             }
+          }
         ]
     },
-
     plugins: [
         new HtmlWebpackPlugin({
             template: "./app/index.html",
@@ -57,5 +47,4 @@ module.exports = {
             chunkFilename: "[id].css"
         })
     ]
-
 };
