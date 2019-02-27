@@ -1,3 +1,9 @@
+$highlight: #F80652;
+$background: #E8F1F8;
+$elementColor: #ADC4D6;
+$subtitle: #222F3F;
+$title: #101C28;
+
 * {
     box-sizing: border-box;
 }
@@ -7,6 +13,8 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     height: 100%;
     font-family: 'Lato', sans-serif;
 }

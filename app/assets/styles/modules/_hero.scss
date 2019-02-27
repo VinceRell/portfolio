@@ -1,3 +1,91 @@
 .main-hero {
-    background: url('../../images/hero-bg.jpg');
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('./images/hero-bg.jpg') center no-repeat fixed;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0.5;
+    }
+
+    &__content {
+        position: absolute;
+        max-width: 700px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        color: #fff;
+    }
+
+
+    &__title {
+        margin: 1rem 0;
+        font-size: 2.2rem;
+        font-weight: 400;
+        text-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+
+        &--highlight {
+            color: $highlight;
+        }
+    }
+
+    &__sub_title {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    &__down-arrow {
+        position: absolute;
+        font-size: 3.6rem;
+        color: #fff;
+        bottom: 50px;
+        left: 50%;
+        cursor: pointer;
+        transform: translateX(-50%);
+        transition: color ease-in-out 0.5s;
+    }
+
+    &__down-arrow:hover {
+        color: $highlight;
+    }
+}
+
+@media (min-width: 600px) {
+    .main-hero {
+        &__title {
+            font-size: 2.6rem;
+        }
+
+        &__subtitle {
+            font-size: 1.3rem;
+        }
+
+        &__down-arrow {
+            font-size: 3.8rem;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .main-hero {
+        &__title {
+            font-size: 2.8rem;
+        }
+
+        &__subtitle {
+            font-size: 1.4rem;
+        }
+
+        &__down-arrow {
+            font-size: 4rem;
+        }
+    }
 }
