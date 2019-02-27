@@ -4,8 +4,8 @@
   "description": "A portfolio site by Vincent Rellum",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch --mode development",
-    "build": "webpack --mode production"
+    "dev": "webpack-dev-server --config=webpack.config.js",
+    "build": "webpack --config=webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/VinceRell/portfolio#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
@@ -31,8 +30,12 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.9",
+    "postcss-loader": "^3.0.0",
+    "webpack-dev-server": "^3.2.1"
   }
 }
