@@ -1,0 +1,82 @@
+.about {
+    background: $background2;
+    padding: 2rem 0;
+    
+    &__content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__profile {
+        border: 2px solid $subtitle;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        box-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
+    }
+
+    &__text{
+        color: $subtitle;
+        line-height: 25px;
+        margin-top: 1rem;
+        padding: 1rem;
+        background: $background;
+        box-shadow: 1px 1px 1px rgba(0,0,0, 0.3);
+    }
+
+    &__skill-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__skill-item {
+        margin-top: 1rem;
+    }
+
+    &__skill-title {
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+    } 
+
+    &__skills {
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 600px) {
+    .about {
+        &__profile {
+            width: 150px;
+            height: 150px;
+        }
+
+       &__skill-list {
+           flex-direction: row;
+           justify-content: space-between;
+       }
+    }
+}
+
+
+@media (min-width: 700px) {
+    .about {
+       &__text-container {
+           flex-direction: row;
+           align-items: flex-start;
+       }
+
+       &__text {
+           margin-top: 0;
+           margin-left: 1rem;
+       }
+    }
+}
