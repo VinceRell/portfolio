@@ -1,0 +1,45 @@
+.contact {
+    background: $subtitle;
+    padding:  2rem 0;
+
+    &__info {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        letter-spacing: 2px;
+        color: #fff;
+    }
+
+    &__items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 0.5rem;
+        color: #fff;
+
+        & a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+   
+
+}
+
+@media (min-width: 600px) {
+    .contact {
+        &__info {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
