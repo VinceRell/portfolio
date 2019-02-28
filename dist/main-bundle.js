@@ -97,6 +97,39 @@ eval("module.exports = \"./images/hero-bg.jpg\";\n\n//# sourceURL=webpack:///./a
 
 /***/ }),
 
+/***/ "./app/assets/images/project1.png":
+/*!****************************************!*\
+  !*** ./app/assets/images/project1.png ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"./images/project1.png\";\n\n//# sourceURL=webpack:///./app/assets/images/project1.png?");
+
+/***/ }),
+
+/***/ "./app/assets/images/project2.png":
+/*!****************************************!*\
+  !*** ./app/assets/images/project2.png ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"./images/project2.png\";\n\n//# sourceURL=webpack:///./app/assets/images/project2.png?");
+
+/***/ }),
+
+/***/ "./app/assets/images/project3.png":
+/*!****************************************!*\
+  !*** ./app/assets/images/project3.png ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"./images/project3.png\";\n\n//# sourceURL=webpack:///./app/assets/images/project3.png?");
+
+/***/ }),
+
 /***/ "./app/assets/scripts/main.js":
 /*!************************************!*\
   !*** ./app/assets/scripts/main.js ***!
@@ -105,7 +138,7 @@ eval("module.exports = \"./images/hero-bg.jpg\";\n\n//# sourceURL=webpack:///./a
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../styles/main.scss */ \"./app/assets/styles/main.scss\");\n\n__webpack_require__(/*! ../images/hero-bg.jpg */ \"./app/assets/images/hero-bg.jpg\");\n\n//# sourceURL=webpack:///./app/assets/scripts/main.js?");
+eval("\n\n__webpack_require__(/*! ../styles/main.scss */ \"./app/assets/styles/main.scss\");\n\n__webpack_require__(/*! ../images/hero-bg.jpg */ \"./app/assets/images/hero-bg.jpg\");\n\n__webpack_require__(/*! ../images/project1.png */ \"./app/assets/images/project1.png\");\n\n__webpack_require__(/*! ../images/project2.png */ \"./app/assets/images/project2.png\");\n\n__webpack_require__(/*! ../images/project3.png */ \"./app/assets/images/project3.png\");\n\n//# sourceURL=webpack:///./app/assets/scripts/main.js?");
 
 /***/ }),
 
