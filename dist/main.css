@@ -17,7 +17,7 @@ img {
 
 .main-header {
   width: 100%;
-  background: transparent;
+  background: #101C28;
   position: fixed;
   z-index: 10; }
   .main-header > div {
@@ -40,20 +40,16 @@ img {
     background: #F80652;
     border-radius: 1px; }
 
-@media (min-width: 768px) {
-  .main-header {
-    display: block; }
-    .main-header__toggle-button {
-      display: none; } }
-
-.applyColor {
-  background: #101C28; }
+@media (min-width: 760px) {
+  .main-header__toggle-button {
+    display: none; } }
 
 .main-nav {
+  position: absolute;
   width: 100%;
   transform: scaleY(0);
   transform-origin: top;
-  transition: all ease-in-out 0.5s; }
+  transition: all ease-in-out 0.2s; }
   .main-nav__items {
     margin: 0;
     padding: 0;
@@ -75,6 +71,22 @@ img {
 .main-nav--open {
   transform: scaleY(1); }
 
+@media (min-width: 760px) {
+  .main-nav {
+    position: static;
+    transform: scaleY(1); }
+    .main-nav__items {
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 1rem; }
+      .main-nav__items a {
+        border: none;
+        padding: 1.2rem; }
+      .main-nav__items a:hover {
+        background: #F80652;
+        color: #fff;
+        transition: all ease-in-out 0.5s; } }
+
 .main-hero {
   position: relative;
   height: 100vh;
@@ -95,7 +107,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    color: #fff; }
+    color: pink; }
   .main-hero__title {
     margin: 1rem 0;
     font-size: 2.2rem;
@@ -110,14 +122,16 @@ img {
   .main-hero__down-arrow {
     position: absolute;
     font-size: 3.6rem;
-    color: #fff;
     bottom: 50px;
     left: 50%;
     cursor: pointer;
-    transform: translateX(-50%);
-    transition: color ease-in-out 0.5s; }
-  .main-hero__down-arrow:hover {
-    color: #F80652; }
+    transform: translateX(-50%); }
+    .main-hero__down-arrow a {
+      color: #fff;
+      text-decoration: none;
+      transition: color ease-in-out 0.5s; }
+    .main-hero__down-arrow a:hover {
+      color: #F80652; }
 
 @media (min-width: 600px) {
   .main-hero__title {

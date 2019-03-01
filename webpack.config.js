@@ -10,11 +10,10 @@ module.exports = {
   mode: "development",
   output: {
     filename: "[name]-bundle.js",
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "/"
+    path: path.resolve(__dirname, "dist/")
   },
   devServer: {
-    contentBase: "dist"
+    contentBase:'dist'
   },
   module: {
     rules: [
