@@ -3,6 +3,7 @@ import '../styles/main.scss';
 
 
 //image imports
+import '../images/favicon.png';
 import '../images/hero-bg.jpg';
 import '../images/project1.jpg';
 import '../images/project2.png';

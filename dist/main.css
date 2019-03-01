@@ -91,7 +91,8 @@ img {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: url("./images/hero-bg.jpg") center no-repeat fixed; }
+  background: url("./images/hero-bg.jpg") center no-repeat fixed;
+  overflow-x: hidden; }
   .main-hero::before {
     content: '';
     position: absolute;
@@ -107,7 +108,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    color: pink; }
+    color: #fff; }
   .main-hero__title {
     margin: 1rem 0;
     font-size: 2.2rem;
