@@ -1,4 +1,4 @@
-.contact {
+.main-contact {
     background: $subtitle;
     padding:  2rem 0;
 
@@ -36,7 +36,7 @@
 }
 
 @media (min-width: 600px) {
-    .contact {
+    .main-contact {
         &__info {
             flex-direction: row;
             justify-content: space-around;

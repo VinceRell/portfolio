@@ -1,0 +1,42 @@
+.main-header {
+    width: 100%;
+    background: $title;
+    position: fixed;
+    z-index: 10;
+  
+    & > div {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 1rem;
+    }
+  
+    &__toggle-button {
+      background: transparent;
+      outline: none;
+      border: none;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.7rem;
+    }
+  
+  &__toggle-button .icon-bar:first-child {
+      margin: 0;
+  }   
+  
+  &__toggle-button .icon-bar {
+     display: block;
+     width: 32px;
+     height: 4px;
+     margin-top: 0.3rem;
+     background: $highlight;
+     border-radius: 1px;
+    } 
+  }
+  
+  @media (min-width: 760px) {
+    .main-header {
+        &__toggle-button {
+          display: none;
+        }
+    }
+  }
+  

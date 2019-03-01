@@ -45,16 +45,20 @@
     &__down-arrow {
         position: absolute;
         font-size: 3.6rem;
-        color: #fff;
         bottom: 50px;
         left: 50%;
         cursor: pointer;
         transform: translateX(-50%);
-        transition: color ease-in-out 0.5s;
-    }
 
-    &__down-arrow:hover {
-        color: $highlight;
+        & a {
+            color: #fff;
+            text-decoration: none;
+            transition: color ease-in-out 0.5s;
+        }
+
+        & a:hover {
+            color: $highlight;
+        }
     }
 }
 

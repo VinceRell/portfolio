@@ -1,4 +1,4 @@
-.about {
+.main-about {
     background: $background2;
     padding: 2rem 0;
     
@@ -53,7 +53,7 @@
 }
 
 @media (min-width: 600px) {
-    .about {
+    .main-about {
         &__profile {
             width: 150px;
             height: 150px;
@@ -68,7 +68,7 @@
 
 
 @media (min-width: 700px) {
-    .about {
+    .main-about {
        &__text-container {
            flex-direction: row;
            align-items: flex-start;
